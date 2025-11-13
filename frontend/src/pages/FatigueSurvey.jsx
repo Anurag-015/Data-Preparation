@@ -8,7 +8,7 @@ function FatigueSurvey() {
   const [submitting, setSubmitting] = useState(false)
   const [metrics, setMetrics] = useState(null)
   const navigate = useNavigate()
-  const baseUrl = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000'
+  const baseUrl = 'https://data-preparation.onrender.com/'
 
   useEffect(() => {
     const m = localStorage.getItem('metrics')
