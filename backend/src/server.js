@@ -78,6 +78,10 @@ app.post("/api/submit", async (req, res) => {
   }
 });
 
+app.get("/", (req, res) => {
+  res.send("ok");
+});
+
 const port = Number(process.env.PORT || 5000);
 app.listen(port, "0.0.0.0", () => {
   console.log(`Server listening at http://127.0.0.1:${port}`);
