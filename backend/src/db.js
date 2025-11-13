@@ -18,7 +18,7 @@ export async function connectDb() {
   await client.db("admin").command({ ping: 1 });
   const db = client.db(dbName);
   const records = db.collection("records");
-  await records.createIndex({ email: 1, session_number: 1 }, { unique: true });
+  await records.createIndex({ email: 1, session_number: 1 });
   await records.createIndex({ email: 1 });
   await records.createIndex({ user_id: 1 });
   return { db, records };
