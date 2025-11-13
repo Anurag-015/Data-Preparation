@@ -4,7 +4,7 @@ import { connectDb } from "./db.js";
 
 const app = express();
 app.use(express.json());
-app.use(cors({ origin: "https://data-preparation-mu.vercel.app/email" }));
+app.use(cors({ origin: "https://data-preparation-mu.vercel.app/" }));
 
 let collections;
 
