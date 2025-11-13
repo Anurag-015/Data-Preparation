@@ -8,7 +8,7 @@ function FatigueSurvey() {
   const [submitting, setSubmitting] = useState(false)
   const [metrics, setMetrics] = useState(null)
   const navigate = useNavigate()
-  const baseUrl = 'https://data-preparation.onrender.com/'
+  const baseUrl = 'https://data-preparation.onrender.com'
 
   useEffect(() => {
     const m = localStorage.getItem('metrics')
